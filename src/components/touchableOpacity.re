@@ -26,6 +26,7 @@ let make =
       ~activeOpacity=?,
       ~focusedOpacity=?,
       ~tvParallaxProperties=?,
+      ~testID=?,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=view,
@@ -90,6 +91,7 @@ let make =
           "focusedOpacity": fromOption(focusedOpacity),
           "activeOpacity": fromOption(activeOpacity),
           "tvParallaxProperties": fromOption(tvParallaxProperties),
+          "testID": fromOption(testID),
         }
       ),
   );
